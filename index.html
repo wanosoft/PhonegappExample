@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+
+	<script src="phonegap.js"> </script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Foo</h1>
+		<a href="#bar" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all ui-btn-right" data-transition="pop">bar</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>Ejemplo de implementacion de una app hibrida en phonegap, he utilizado brackets como mi editor de texto</p>
+		<p>Soy el deivid</p>
+
+		</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" data-iconpos="bottom"> <!-- /nuevo div no se porueé -->
+			<ul>
+				<li><a href="#DEvento" data-icon="back">Siguiente</a></li> <!-- /content -->
+				<li><a href="#Galeria" data-icon="grid" class="ui-btn-active">Galeria</a></li>
+				<li><a href="#" data-icon="delete" data-rel="back">Cancelar</a></li>
+			</ul>
+		</div><!-- /navbar-->
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+		<a href="#foo" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-corner-all ui-btn-right">Regresar</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
